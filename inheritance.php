@@ -1,5 +1,4 @@
 <?php
-
 class Animal{
 	public $Name ;
 	public $lastName ;
@@ -22,17 +21,12 @@ class Animal{
 		return "This is my " . $this->name . " and last " . $this->lastname;
 	}
 }
-
 class wildCat extends Animal{
-	
 	function greet(){
 		return $this->meow;
 	}
 }
-
-
 class wildDog extends Animal{
-	
 	function morning(){
 		return $this->bark;
 	}
@@ -41,45 +35,7 @@ $mixed = new mixed("Fuzz", "Buzz", "Gray", "other", "21");
 print "Animal 1 is a" $mixed->getName();
 
 
-class Person{
 
-	public $flavor;
-	public $color;
-	public $scoops;
-	public $typeCone;
-	public $mom;
-	public $sister;
-	
-	function __construct($flavor, $color, $scoops, $typeCone, $mom, $sister)
-	{
-		$this->flavor = $flavor;
-		$this->color = $color;
-		$this->scoops = $scoops;
-		$this->typeCone = $typeCone;
-		$this->momsFlavor = $mom;
-	    $this->sisFlavor = $sister;
-	}
-
-	function getName() 
-	{
-    return "I love" . $this->flavor . "because" . "the color is like a" . $this->color . ". I always get" . $this->scoops . "with a " . $this->typeCone . ".";
-	}
-
-}
-
-class Mom extends Person{
-		function mom();
-		return $this->momsFlavor;
-
-}
-
-class Sis extends Person{
-	function Sister();
-	return $this->sisFlavor;
-}
-
-$personIcecream = new person("Chocolate Mocha", "coffee chocolate color", "3 scoops", "cake cone", "My mom always gets Green tea", "My sister always gets mint and chip")
-print $personIcecream->getName();
 
 
 
