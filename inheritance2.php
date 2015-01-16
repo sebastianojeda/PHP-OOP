@@ -1,6 +1,5 @@
 <?php
 
-
 class Animal{
 	public $firstName;
 	public $lastName;
@@ -22,7 +21,7 @@ class Animal{
 	}
 
 }
-class Dog extends Animal{
+class cat extends Animal{
 	
 	function __construct($firstName, $lastName, $scientificName, $gender, $weight, $meow){
 		parent::__construct($firstName, $lastName, $scientificName, $gender, $weight);
@@ -45,55 +44,54 @@ class Dog extends Animal{
 		return $this->bark;
 	}
 }
-
 $dog = new Dog("cat", "mellow", "yellow", "male", 15, true);
 print "Animal1 is a" . $dog->getName();
 
 
-class family{
-	public $mom;
-	public $dad;
-	public $sister;
-	public $uncle;
+// class family{
+// 	public $mom;
+// 	public $dad;
+// 	public $sister;
+// 	public $uncle;
 		
-	function __construct($mom, $dad, $sister, $uncle){
-		$this->mom = $mom;
-		$this->dad = $dad;
-		$this->sister = $sister;
-		$this->uncle = $uncle;
+// 	function __construct($mom, $dad, $sister, $uncle){
+// 		$this->mom = $mom;
+// 		$this->dad = $dad;
+// 		$this->sister = $sister;
+// 		$this->uncle = $uncle;
 		
-	}
+// 	}
 
-	function getName(){
-		return "This is my " . $this->mom . " and this is my " . $this->dad . "and this is my " .
-		$this->uncle . " .";
-	}
+// 	function getName(){
+// 		return "This is my " . $this->mom . " and this is my " . $this->dad . "and this is my " .
+// 		$this->uncle . " .";
+// 	}
 
-}
-class grandma extends family{
+// }
+// class grandma extends family{
 	
-	function __construct($mom, $dad, $sister, $uncle, $grandma){
-		parent::__construct($mom, $dad, $sister, $uncle);
-		$this->grandma = $grandma;
-	}
-	function greet(){
-			return $this->$grandma;
-		}
-}
-class sister2 extends family{
+// 	function __construct($mom, $dad, $sister, $uncle, $grandma){
+// 		parent::__construct($mom, $dad, $sister, $uncle);
+// 		$this->grandma = $grandma;
+// 	}
+// 	function greet(){
+// 			return $this->$grandma;
+// 		}
+// }
+// class sister2 extends family{
 	
-	function __construct($mom, $dad, $sister, $uncle, $sister2)	{
-		parent::__construct($mom, $dad, $sister, $uncle);
-		$this->sis2 = $sister2;
-	}
+// 	function __construct($mom, $dad, $sister, $uncle, $sister2)	{
+// 		parent::__construct($mom, $dad, $sister, $uncle);
+// 		$this->sis2 = $sister2;
+// 	}
 
-	function hello(){
-		return $this->sis2;
-	}
-}
+// 	function hello(){
+// 		return $this->sis2;
+// 	}
+// }
 
-$fam = new Fam("Mom", "dad", "sister", "uncle", "grandma", "sister");
-print "this is my family" . $fam->getName();
+// $fam = new Fam("Mom", "dad", "sister", "uncle", "grandma", "sister");
+// print "this is my family" . $fam->getName();
 
 // class {
 // 	public $ ;
